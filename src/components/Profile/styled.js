@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 
 export const ProfileWrapper = styled.section`
   color: #8899a6;
@@ -13,7 +13,7 @@ export const ProfileLink = styled(Link)`
   transition: color 0.5s;
 
   &:hover {
-      color: #1fa1f2;
+    color: #1fa1f2;
   }
 `
 export const ProfileAuthor = styled.h1`
