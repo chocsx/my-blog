@@ -10,10 +10,12 @@ background: "red"
 
 Teste de parágrafo com markdown pesquisando no [Google](https://google.com)
 
-
+![Marcelo](/assets/img/marcelo.jpg)
 ```javascript
 a=3
 puts a
 ```
+
+![Mauricio](/assets/img/tey.jpg)
 
 
