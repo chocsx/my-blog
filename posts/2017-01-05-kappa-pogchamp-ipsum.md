@@ -1,6 +1,6 @@
 ---
-date: 2016-01-05 05:54:23
-title: Lorem Lorem Ipsum
+date: 2017-01-05 05:54:23
+title: Kappa PogChamp 
 description: and I'm lorem sure lorem
 category: JSX
 background: "red"
