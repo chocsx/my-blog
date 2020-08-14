@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 import media from "styled-media-query"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 
 export const PostItemLink = styled(Link)`
   color: var(--texts);
@@ -39,7 +39,8 @@ export const PostItemWrapper = styled.section`
 
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background ? props.background : "var(--highlight)"};
+  background: ${props =>
+    props.background ? props.background : "var(--highlight)"};
   border-radius: 50%;
   color: var(--postColor);
   display: flex;

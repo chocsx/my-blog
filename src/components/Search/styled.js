@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SearchWrapper = styled.section`
@@ -35,7 +35,7 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: var(--texts);
   }
-  
+
   body#grid & {
     .ais-Hits-list {
       background-color: var(--borders);
@@ -62,7 +62,7 @@ export const SearchWrapper = styled.section`
     padding: 0.5rem;
     width: 100%;
 
-    &::placeholder{
+    &::placeholder {
       color: var(--texts);
     }
   }

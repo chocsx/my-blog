@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ReactDisqusComments from "react-disqus-comments";
+import React from "react"
+import PropTypes from "prop-types"
+import ReactDisqusComments from "react-disqus-comments"
 
-import * as S from './styled'
+import * as S from "./styled"
 
 const Comments = ({ url, title }) => {
   const completeURL = `https://msobrinho.com${url}`
@@ -10,7 +10,7 @@ const Comments = ({ url, title }) => {
   return (
     <S.CommentsWrapper>
       <S.CommentsTitle>Comentários</S.CommentsTitle>
-      <ReactDisqusComments  
+      <ReactDisqusComments
         shortname="msobrinho"
         identifier={completeURL}
         title={title}
@@ -22,7 +22,7 @@ const Comments = ({ url, title }) => {
 
 Comments.propTypes = {
   url: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 }
 
-export default Comments;
+export default Comments

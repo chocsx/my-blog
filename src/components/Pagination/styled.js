@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 import media from "styled-media-query"
 
 export const PaginationWrapper = styled.section`
@@ -14,8 +14,7 @@ export const PaginationWrapper = styled.section`
     padding: 1rem;
   `}
 
-
-  a{
+  a {
     color: var(--texts);
     text-decoration: none;
     transition: color 0.5s

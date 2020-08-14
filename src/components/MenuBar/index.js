@@ -10,12 +10,11 @@ import { ThList as List } from "styled-icons/typicons/ThList"
 import * as S from "./styled"
 
 const MenuBar = () => {
-
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
 
-  const isDarkMode = theme === 'dark'
-  const isListMode = display === 'list'
+  const isDarkMode = theme === "dark"
+  const isListMode = display === "list"
 
   useEffect(() => {
     setTheme(window.__theme)
@@ -42,20 +41,20 @@ const MenuBar = () => {
         <S.MenuBarItem
           title="Mudar Tema"
           onClick={() => {
-            window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
+            window.__setPreferredTheme(isDarkMode ? "light" : "dark")
           }}
           className={theme}
         >
           <Light />
         </S.MenuBarItem>
-        <S.MenuBarItem 
+        <S.MenuBarItem
           title="Mudar Visualização"
           onClick={() => {
-            window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
+            window.__setPreferredDisplay(isListMode ? "grid" : "list")
           }}
           className={display}
         >
-          {isListMode ? <Grid /> : <List /> }
+          {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
         <S.MenuBarItem title="Ir para o Topo">
           <Arrow />

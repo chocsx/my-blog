@@ -14,7 +14,7 @@ export const LayoutMain = styled.main`
   width: 100%;
 
   body#grid & {
-    grid-template-areas: 
+    grid-template-areas:
       "posts"
       "pagination";
   }

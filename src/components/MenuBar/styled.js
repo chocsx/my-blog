@@ -1,10 +1,8 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import {
-  Link
-} from "gatsby"
+import { Link } from "gatsby"
 
-export const MenuBarWrapper = styled.aside `
+export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: var(--mediumBackground);
   border-left: 1px solid var(--borders);
@@ -16,9 +14,7 @@ export const MenuBarWrapper = styled.aside `
   position: fixed;
   right: 0;
   width: 3.75rem;
-  transition: background 0.5s
-
-  ${media.lessThan("large")`
+  transition: background 0.5s ${media.lessThan("large")`
     border-top: 1px solid var(--borders);
     bottom: 0;
     flex-direction: row;
@@ -26,10 +22,10 @@ export const MenuBarWrapper = styled.aside `
     padding: 0;
     position: fixed;
     width: 100%;
-  `}
+  `};
 `
 
-export const MenuBarGroup = styled.div `
+export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -38,12 +34,11 @@ export const MenuBarGroup = styled.div `
   `}
 `
 
-export const MenuBarLink = styled(Link)
-`
+export const MenuBarLink = styled(Link)`
   display: block;
 `
 
-export const MenuBarItem = styled.span `
+export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
   display: block;
@@ -59,7 +54,7 @@ export const MenuBarItem = styled.span `
       color: #e2e240;
     }
   }
-  
+
   &:hover {
     color: var(--highlight);
   }
@@ -69,7 +64,7 @@ export const MenuBarItem = styled.span `
       display: none;
     `}
   }
-  
+
   ${media.greaterThan("large")`
     &:hover {
       color: var(--highlight);

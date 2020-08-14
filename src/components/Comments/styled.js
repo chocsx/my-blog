@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 import media from "styled-media-query"
 
 export const CommentsWrapper = styled.section`
@@ -16,7 +16,7 @@ export const CommentsWrapper = styled.section`
   }
 
   #disqus_thread {
-    a{
+    a {
       color: var(--highlight) !important;
     }
   }

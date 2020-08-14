@@ -12,7 +12,7 @@ export const ProfileLink = styled(Link)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
-  
+
   ${media.lessThan("large")`
     display: flex;
     text-align: left;

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import media from 'styled-media-query'
+import media from "styled-media-query"
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
