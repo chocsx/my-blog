@@ -22,23 +22,23 @@ const postsQuery = `{
   }
 }`
 
-const flatten = arr => 
+const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     date_timestamp: parseInt(
       (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
     ),
-    ...rest
+    ...rest,
   }))
 
 const queries = [
   {
     query: postsQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: 'Posts',
+    indexName: "Posts",
     settings: {
-      attributesToSnippet: [`excerpt:20`]
-    }
+      attributesToSnippet: [`excerpt:20`],
+    },
   },
 ]
 

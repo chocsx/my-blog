@@ -1,9 +1,8 @@
-import React from 'react';
-import PostItem from '../PostItem'
+import React from "react"
+import PostItem from "../PostItem"
 
 const Hit = ({ hit }) => (
-
-  <PostItem 
+  <PostItem
     slug={hit.fields.slug}
     title={hit.title}
     background={hit.background}
@@ -11,7 +10,6 @@ const Hit = ({ hit }) => (
     description={hit.description}
     category={hit.category}
   />
-
 )
 
-export default Hit;
+export default Hit
