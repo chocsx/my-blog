@@ -2,7 +2,11 @@ backend:
   name: github
   repo: chocsx/my-blog
   branch: master
-  site_domain: https://msobrinho.com/
+  site_domain: msobrinho.com
+
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
