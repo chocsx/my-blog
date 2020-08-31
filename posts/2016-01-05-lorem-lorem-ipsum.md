@@ -4,6 +4,7 @@ title: Lorem Lorem Ipsum
 description: and I'm lorem sure lorem
 category: JSX
 background: "red"
+image: "/assets/img/marcelo.jpg"
 ---
 
 # Lorem Ipsum
