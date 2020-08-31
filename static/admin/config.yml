@@ -10,24 +10,41 @@ public_folder: "assets/img"
 
 collections:
   - name: "posts"
-    label: "Posts" 
+    label: "Posts"
     folder: "posts"
-    create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
-      - {label: "image", name: "thumbnail", widget: "image"}
-      - {label: "Category", name: 'category', widget: 'select', options:['css', 'php', 'laravel', 'git', 'react', 'seo']}
-      - {label: "Background", name: 'background', widget: 'select', options: [
-        {
-          {label: "CSS", value: "#b31917"},
-          {label: "PHP", value: "#2da0c3"},
-          {label: "Laravel", value: "#d6ba32"},
-          {label: "GIT", value: "#eb7728"},
-          {label: "React", value: "#637a91"},
-          {label: "SEO", value: "7aab13"},
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Introduction", name: "introduction", widget: "string" }
+      - { label: "Twitter text", name: "twitter_text", widget: "string" }
+      - {
+          label: "Main Class",
+          name: "main-class",
+          widget: "select",
+          options: ["php", "css", "js", "html", "git", "dev", "misc"],
         }
-      ]}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: "Color",
+          name: "color",
+          widget: "select",
+          options:
+            [
+              { label: "PHP", value: "#B31917" },
+              { label: "CSS", value: "#2DA0C3" },
+              { label: "JS", value: "#D6BA32" },
+              { label: "HTML", value: "#EB7728" },
+              { label: "GIT", value: "#7D669E" },
+              { label: "Dev", value: "#637a91" },
+              { label: "Misc", value: "#7AAB13" },
+            ],
+        }
+      - { label: "Tags", name: "tags", widget: "list", default: [""] }
+      - {
+          label: "Category",
+          name: "categories",
+          widget: "list",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
