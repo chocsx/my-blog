@@ -29,7 +29,7 @@ const MenuBar = () => {
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
         <S.MenuBarLink
-          to="/"
+          href="/"
           title="Voltar para Home"
           cover
           direction="right"
@@ -41,7 +41,7 @@ const MenuBar = () => {
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
-          to="/search/"
+          href="/search/"
           title="Pesquisar"
           cover
           direction="left"

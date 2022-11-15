@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import Img from "gatsby-image"
+import Image from "next/image"
 
-export const AvatarWrapper = styled(Img)`
+export const AvatarWrapper = styled(Image)`
   border-radius: 50%;
   height: 3.75rem;
   margin: auto;
