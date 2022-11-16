@@ -31,10 +31,10 @@ const MenuBar = () => {
         <S.MenuBarLink
           href="/"
           title="Voltar para Home"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          duration={0.6}
+          // cover
+          // direction="right"
+          // bg={getThemeColor()}
+          // duration={0.6}
         >
           <S.MenuBarItem>
             <Home />
@@ -43,10 +43,10 @@ const MenuBar = () => {
         <S.MenuBarLink
           href="/search/"
           title="Pesquisar"
-          cover
-          direction="left"
-          bg={getThemeColor()}
-          duration={0.6}
+          // cover
+          // direction="left"
+          // bg={getThemeColor()}
+          // duration={0.6}
         >
           <S.MenuBarItem>
             <Search />

@@ -9,7 +9,7 @@ import * as S from "./styled"
 const Profile = () => {
   return (
     <S.ProfileWrapper>
-      <S.ProfileLink href="/" cover direction="left" bg={getThemeColor()} duration={0.6}>
+      <S.ProfileLink href="/">
         <Avatar />
         <S.ProfileAuthor>
           {siteMetadata.title}
